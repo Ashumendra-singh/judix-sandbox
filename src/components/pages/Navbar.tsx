@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="h-16 flex justify-between items-center py-3 px-6 shadow-sm w-full">
+    <nav className="h-16 flex justify-between items-center py-3 px-6  w-full">
       {/* Logo */}
       <img src="logo.svg" alt="logo image" className="h-8 w-auto" />
 
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden z-50">
+        <div className="w-full bg-neutral-100 shadow-md md:hidden ">
           <ul className="flex flex-col gap-4 items-center py-6 font-satoshi font-medium text-body-md">
             <li className="cursor-pointer">Product</li>
             <li className="cursor-pointer">Pricing</li>

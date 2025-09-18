@@ -4,7 +4,7 @@ import PriceCards from './PriceCards'
 function Toggle() {
   return (
     <>
-      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-18 w-4/5'>
+      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-10 w-4/5'>
 
             {/* yearly off toggle */}
 
