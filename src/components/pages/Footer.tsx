@@ -40,7 +40,7 @@ function Footer() {
                         </div>
                         <div className='space-y-2 '>
                             <InputField placeholder='Enter your email' className='bg-neutral-100 text-neutral-800 border-0' />
-                            <Button variant='accent' size='medium' className='w-full md:w-0'>Subscribe</Button>
+                            <Button variant='accent' size='medium' className='w-full md:w-max'>Subscribe</Button>
                         </div>
                     </div>
                 </div>
