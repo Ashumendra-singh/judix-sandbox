@@ -17,7 +17,7 @@ function Savings() {
     <>
       <div className='w-[95%] md:w-4/5 flex flex-col gap-16 items-center '>
             <p>Trusted by over 1000 Lawyers</p>
-            <Card className='flex '>
+            <Card className='flex shadow-sm'>
                 <div>
                     <h1 className='text-h3 text-accent-400 font-medium mb-8'>
                         Your Potential Savings
@@ -31,11 +31,11 @@ function Savings() {
                     <div className='flex flex-col sm:flex-row gap-8 mt-8  justify-between'>
                         <div className=''>
                             <h6 >Your hourly value</h6>
-                            <input className='text-accent-400 border-b-[1px] ' type='number' placeholder={`${hourlyRate}`}  onChange={(e)=>setHourlyRate(Number(e.target.value))}/>
+                            <input className='text-accent-400 border-b-[1px] outline-0' type='number' value={`${hourlyRate}`}  onChange={(e)=>setHourlyRate(Number(e.target.value))}/>
                         </div>
                         <div>
                             <h6>Number of hours saved per week</h6>
-                            <input className='text-accent-400 border-b-[1px] ' type='number' placeholder={`${hours}`} onChange={(e)=> setHours(Number(e.target.value))}/>
+                            <input className='text-accent-400 border-b-[1px] outline-0 ' type='number' value={`${hours}`} onChange={(e)=> setHours(Number(e.target.value))}/>
                         </div>
                     </div>
 

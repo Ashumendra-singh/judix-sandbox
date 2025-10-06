@@ -85,7 +85,7 @@ function PriceCards() {
         <div className='col-span-1 lg:col-span-2 '>
             <Card  title='ADD ON' className='p-9 font-satoshi min-h-[357px] border-accent-400 border-[2px]'>
                 <div className=''>
-                    <div className='flex flex-col gap-8 items-center mb-4'>
+                    <div className='flex flex-col sm:flex-row gap-8 items-center mb-4'>
                         <div className='text-[28px] font-satoshi text-center'>Ask your research queries directly on  </div>
                         <img src="whatsapp.svg" alt="whatsapp logo" className='w-[172px]' />
                     </div>
