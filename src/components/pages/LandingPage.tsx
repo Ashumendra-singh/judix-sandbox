@@ -24,7 +24,7 @@ function LandingPage() {
                 <p className='font-Satoshi text-h6 tracking-wider text-neutral-600'>PRICING</p>
 
                 <div className='flex flex-col items-center text-center gap-4 font-manrope'>
-                  <h1 className='text-7xl text-accent-400 '>Smarter Legal Research </h1> 
+                  <h1 className=' text-[56px] sm:text-7xl text-accent-400 '>Smarter Legal Research </h1> 
                   <h1 className='text-7xl '>at the price of your daily coffee</h1>
                 </div>
 

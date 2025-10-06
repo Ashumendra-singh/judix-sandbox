@@ -142,10 +142,10 @@ function Questions() {
               className={`transition-all duration-500 ease-in-out overflow-hidden ${
                 openIndex === index
                   ? "max-h-40 opacity-100 mt-3"
-                  : "max-h-0 opacity-0"
+                  : "max-h-0 opacity-0 "
               }`}
             >
-              <p className="text-neutral-500 w-[80%] leading-l tracking-m text-h6">
+              <p className=" text-neutral-500 w-[80%] leading-8 tracking-[0.02em]  text-h6">
                 {faq.answer}
               </p>
             </div>

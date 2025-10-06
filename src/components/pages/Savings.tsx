@@ -1,12 +1,23 @@
-import React from 'react'
+"use client";
+import React, { useEffect } from 'react'
 import Card from '../ui/card'
+import { useState } from 'react';
+import { Target } from 'lucide-react';
 
 function Savings() {
+    const [hourlyRate, setHourlyRate] = useState<number>(3000);
+    const [hours, setHours] = useState<number>(5);
+    const [savings, setSavings] = useState<number>(0);
+
+    useEffect(() => {
+        setSavings(hourlyRate * hours - (hourlyRate - hours));
+    },[hourlyRate,hours])
+
   return (
     <>
-      <div className='w-full md:w-4/5 flex flex-col gap-16 items-center my-16'>
+      <div className='w-full md:w-4/5 flex flex-col gap-16 items-center '>
             <p>Trusted by over 1000 Lawyers</p>
-            <Card className='w-[80%] lg:w-[65%] flex '>
+            <Card className='flex '>
                 <div>
                     <h1 className='text-h3 text-accent-400 font-medium mb-8'>
                         Your Potential Savings
@@ -20,11 +31,11 @@ function Savings() {
                     <div className='flex flex-col sm:flex-row gap-8 mt-8  justify-between'>
                         <div className=''>
                             <h6 >Your hourly value</h6>
-                            <h5 className='text-accent-400 border-b-[1px] '>₹ 3000</h5>
+                            <input className='text-accent-400 border-b-[1px] ' type='number' placeholder={`${hourlyRate}`}  onChange={(e)=>setHourlyRate(Number(e.target.value))}/>
                         </div>
                         <div>
                             <h6>Number of hours saved per week</h6>
-                            <h5 className='text-accent-400 border-b-[1px] '>5</h5>
+                            <input className='text-accent-400 border-b-[1px] ' type='number' placeholder={`${hours}`} onChange={(e)=> setHours(Number(e.target.value))}/>
                         </div>
                     </div>
 
@@ -32,16 +43,16 @@ function Savings() {
                         <div className='space-y-.5 '>
                             <div className='flex justify-between text-base-100 px-2 py-1'>
                                 <p>Billable hours value per month</p>
-                                <p className='text-body-sm font-medium'>₹ 60,000</p>
+                                <p className='text-body-sm font-medium'>₹{ hourlyRate*hours}</p>
                             </div>
                             <div className='flex justify-between text-base-100 px-2 py-1'>
                                 <p>Money spent on Judix per month</p>
-                                <p className='text-body-sm font-medium'>₹ 3499</p>
+                                <p className='text-body-sm font-medium'>₹{ hourlyRate - hours}</p>
                             </div>
                         </div>
                         <div className='flex justify-between text-accent-400 bg-base-100 px-2 py-1 rounded-md'>
                             <p>Net Potential Savings / month</p>
-                            <p>₹56,500</p>
+                            <p>₹{savings}</p>
                         </div>
                     </Card>
                     <p className='text-lg'>On an average, every lawyer saves approx 5 hours of billable hours on legal research while using Judix</p>
