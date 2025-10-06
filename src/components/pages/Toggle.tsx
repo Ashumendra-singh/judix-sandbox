@@ -40,7 +40,7 @@ function Toggle() {
 
   return (
     <>
-      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-10 w-[99%] sm:mx-0 sm:w-4/5'>
+      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-10 w-[95%] sm:mx-0 sm:w-4/5'>
 
         {/* yearly off toggle */}
         <div
@@ -49,7 +49,7 @@ function Toggle() {
         >
           {/* Monthly */}
           <p
-            className={`${!togglebtn ? "bg-accent-400 text-white" : "text-gray-400"} rounded-full px-[10px] py-[7px] font-bold transition-all duration-300`}
+            className={`${!togglebtn ? "bg-accent-400 text-neutral-50" : "text-gray-400"} rounded-full px-[10px] py-[7px] font-bold transition-all duration-300`}
           >
             Monthly
           </p>
