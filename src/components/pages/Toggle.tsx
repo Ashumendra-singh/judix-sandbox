@@ -40,7 +40,7 @@ function Toggle() {
 
   return (
     <>
-      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-10 w-4/5'>
+      <div className='flex flex-col gap-16 items-center mt-30 sm:mt-10 w-[99%] sm:mx-0 sm:w-4/5'>
 
         {/* yearly off toggle */}
         <div

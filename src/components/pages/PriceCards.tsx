@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react";
 
 function PriceCards() {
   return (
-    <div className='grid grid-cols-1 m-6 lg:m-[0px]  lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-12 '>
+    <div className='grid grid-cols-1 m-0  lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-12 '>
         <div className='col-span-1'>
             <Card title='LITE' className='rounded-b-none p-9'>
                 <div className='flex flex-col gap-4'>
@@ -85,8 +85,8 @@ function PriceCards() {
         <div className='col-span-1 lg:col-span-2 '>
             <Card  title='ADD ON' className='p-9 font-satoshi min-h-[357px] border-accent-400 border-[2px]'>
                 <div className=''>
-                    <div className='flex gap-8 items-center mb-4'>
-                        <div className='text-[28px] font-satoshi '>Ask your research queries directly on  </div>
+                    <div className='flex flex-col gap-8 items-center mb-4'>
+                        <div className='text-[28px] font-satoshi text-center'>Ask your research queries directly on  </div>
                         <img src="whatsapp.svg" alt="whatsapp logo" className='w-[172px]' />
                     </div>
                         

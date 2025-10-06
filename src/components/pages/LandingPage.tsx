@@ -25,10 +25,10 @@ function LandingPage() {
 
                 <div className='flex flex-col items-center text-center gap-4 font-manrope'>
                   <h1 className=' text-[56px] sm:text-7xl text-accent-400 '>Smarter Legal Research </h1> 
-                  <h1 className='text-7xl '>at the price of your daily coffee</h1>
+                  <h1 className='text-[56px]  sm:text-7xl '>at the price of your daily coffee</h1>
                 </div>
 
-            <p className='font-Satoshi text-[#121212] text-center text-h6 mt-8 sm:mt-1'>Start with 14 days free trial, upgrade when you need more.</p>
+            <p className='font-Satoshi text-[#121212] text-center text-h6 mt-8 w-[95%] sm:w-full sm:mt-1'>Start with 14 days free trial, upgrade when you need more.</p>
             
         </div>
 
