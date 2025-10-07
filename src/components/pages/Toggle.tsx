@@ -63,7 +63,7 @@ function Toggle() {
         </div>
 
         {/* priceCards */}
-        <PriceCards />
+        <PriceCards yearly={togglebtn} />
       </div>
     </>
   )

@@ -1,16 +1,34 @@
+"use client";
 import React from 'react'
 import Card from '../ui/card'
 import Button from '../ui/button'
 import { Check, X } from "lucide-react";    
 
 
-function PriceCards() {
+interface PriceCardsProps {
+    yearly: boolean;
+}
+
+type SubscriptionPlan = {
+  lite: number;
+  basic: number;
+  pro: number;
+};
+
+const subscriptionPlans: SubscriptionPlan = {
+    lite: 149,
+    basic: 1249,
+    pro: 3499
+}
+
+function PriceCards({ yearly }: PriceCardsProps) {
+    console.log(yearly);
   return (
     <div className='grid grid-cols-1 m-0  lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-12 '>
         <div className='col-span-1'>
             <Card title='LITE' className='rounded-b-none p-9'>
                 <div className='flex flex-col gap-4'>
-                    <p> <span className='text-4xl font-bold'>₹149</span> <span className='text-4xl font-light text-neutral-600'>/</span> per mo</p>         
+                    <p> <span className='text-4xl font-bold'>₹ {yearly ? Math.round( subscriptionPlans.lite*12 - (subscriptionPlans.lite*12*0.2)) : subscriptionPlans.lite }</span> <span className='text-4xl font-light text-neutral-600'>/</span> per {yearly ? "year" : "mo"}</p>         
                     <p>Greate for getting started</p>
                     <Button variant='outline' size='medium' className='w-full mt-4'>
                         Get started with Lite
@@ -35,7 +53,7 @@ function PriceCards() {
         <div className='border-[2px] border-primary-400 rounded-md col-span-1'>
             <Card title='BASIC' className='rounded-b-none p-9'>
                 <div className='flex flex-col gap-4'>
-                    <p> <span className='text-4xl font-bold'>₹1249</span> <span className='text-4xl font-light text-neutral-600'>/</span> per mo</p>         
+                    <p> <span className='text-4xl font-bold'>₹{yearly ? Math.round( subscriptionPlans.basic*12 - (subscriptionPlans.basic*12*0.2)) : subscriptionPlans.basic }</span> <span className='text-4xl font-light text-neutral-600'>/</span> per {yearly ? "year" : "mo"}</p>         
                     <p>Great for solo-practitioners</p>
                     <Button variant='primary' size='medium' className='w-full mt-4'>
                         Level Up with Starter
@@ -60,7 +78,7 @@ function PriceCards() {
         <div className='col-span-1'>
             <Card title='PRO' className='rounded-b-none p-9'>
                 <div className='flex flex-col gap-4'>
-                    <p> <span className='text-4xl font-bold'>₹3499</span> <span className='text-4xl font-light text-neutral-600'>/</span> per mo</p>         
+                    <p> <span className='text-4xl font-bold'>₹{yearly ? Math.round( subscriptionPlans.pro*12 - (subscriptionPlans.pro*12*0.2)) : subscriptionPlans.pro }</span> <span className='text-4xl font-light text-neutral-600'>/</span> per {yearly ? "year" : "mo"}</p>         
                     <p>Most suited for teams and law firms</p>
                     <Button variant='outline' size='medium' className='w-full mt-4'>
                         Go Unlimited with Pro
