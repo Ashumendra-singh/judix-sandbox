@@ -131,9 +131,9 @@ function Questions() {
             >
               <h2 className="text-h5 text-neutral-800">{faq.question}</h2>
               {openIndex === index ? (
-                <Icon name="Minus" size={26} color="#262626" />
+                <Icon name="Minus" size={26} className="text-neutral-700"/>
               ) : (
-                <Icon name="Add" size={26} color="#262626" />
+                <Icon name="Add" size={26} className="text-neutral-700" />
               )}
             </div>
 

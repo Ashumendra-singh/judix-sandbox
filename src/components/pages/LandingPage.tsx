@@ -28,7 +28,7 @@ function LandingPage() {
                   <h1 className='text-[56px]  sm:text-7xl '>at the price of your daily coffee</h1>
                 </div>
 
-            <p className='font-Satoshi text-[#121212] text-center text-h6 mt-8 w-[95%] sm:w-full sm:mt-1'>Start with 14 days free trial, upgrade when you need more.</p>
+            <p className='font-Satoshi text-neutral-800 text-center text-h6 mt-8 w-[95%] sm:w-full sm:mt-1'>Start with 14 days free trial, upgrade when you need more.</p>
             
         </div>
 

@@ -16,7 +16,7 @@ function Savings() {
   return (
     <>
       <div className='w-[95%] md:w-4/5 flex flex-col gap-16 items-center '>
-            <p>Trusted by over 1000 Lawyers</p>
+            <p className='text-body-lg tracking-[0.02em] font-medium uppercase leading-2 text-gray-800 font-satoshi'>Trusted by over 1000 Lawyers</p>
             <Card className='flex shadow-sm'>
                 <div>
                     <h1 className='text-h3 text-accent-400 font-medium mb-8'>
