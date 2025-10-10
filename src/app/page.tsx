@@ -8,6 +8,9 @@ import Savings from "@/components/pages/Savings";
 import CallReq from "@/components/pages/CallReq";
 import Questions from "@/components/pages/Questions";
 import Toggle from "@/components/pages/Toggle";
+import Yourcart from "@/components/pages/Yourcart";
+import BillingDetails from "@/components/pages/BillingDetails";
+import OrderSummary from "@/components/pages/OrderSummary";
 
 
 
@@ -17,7 +20,7 @@ export default function Home() {
     <>
       <div className='w-full h-screen flex flex-col gap-16  items-center' >
         <Navbar/>
-        <LandingPage/>
+        {/* <LandingPage/>
          <Toggle/>
          
 
@@ -25,8 +28,14 @@ export default function Home() {
 
         <CallReq/>
 
-        <Questions/>
-       
+        <Questions/> */}
+        <div className="flex flex-col xl:flex-row gap-10 xl:gap-4 m-8">
+          <div>
+            <Yourcart/>
+            <BillingDetails/>
+          </div>
+          <OrderSummary/>
+        </div>
         <Footer/>
     
         
