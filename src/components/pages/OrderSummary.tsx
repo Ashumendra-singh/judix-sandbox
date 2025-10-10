@@ -36,7 +36,7 @@ function OrderSummary() {
         </div>
         <div className='flex items-center gap-2 justify-center w-[80%]'>
           
-          <h5 className='inline font-medium text-center'> <img src="checked.svg" alt="" className='inline px-4 py-2'/> VALID PROMO CODE. <span className='font-normal'>You're getting the best price we've got.</span></h5>
+          <h5 className='inline font-medium text-center'> <img src="checked.svg" alt="" className='inline px-4 py-2'/> VALID PROMO CODE.<span className='font-normal'>Your&apos;e getting the best price we&apos;ve got.</span></h5>
         </div>
       </div>
       
