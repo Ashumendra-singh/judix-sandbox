@@ -30,7 +30,7 @@ export default function Home() {
 
         <Questions/> */}
         <div className="flex flex-col xl:flex-row gap-10 xl:gap-4 m-8">
-          <div>
+          <div className="flex flex-col gap-8 p-4">
             <Yourcart/>
             <BillingDetails/>
           </div>
